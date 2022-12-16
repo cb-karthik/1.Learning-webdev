@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z-index</title>
+    <style>
+        .box{
+            width: 170px;
+            height:170px;
+            border: 3px solid red;
+            padding: 2px;
+        }
+        #box1{
+            background-color: antiquewhite;
+
+            /* defining position to perform visibility. */
+            position: relative; 
+            top: 25px;
+  /* for z index */
+  z-index: -35;
+
+        }
+        #box2{
+            background-color: rgb(220, 215, 250);
+              /* defining position to perform visibility. */
+            position: relative;
+             top: 25px; 
+             /* for z index */
+             z-index: 50;
+            /* visibility: hidden; */
+            /* performing Display none */
+            /* display: none; */
+        }
+        #box3{
+            background-color: rgb(74, 66, 54);
+        }
+        #box4{
+            background-color: rgb(154, 97, 23);
+        }
+        #box5{
+            background-color: rgb(20, 185, 75);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- div.box#box*5 used this to create 5 box at a time -->
+    <div class="box"id="box1"></div>
+    <div class="box"id="box2"></div>
+    <div class="box"id="box3"></div>
+    <div class="box"id="box4"></div>
+    <div class="box"id="box5"></div>
+</body>
+</html>
