@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -86,3 +87,71 @@
     </div>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Felx box</title>
+    <style>
+      /* Styling for continer */
+      .container {
+        height: 554px;
+        width: 100%;
+        border: 2px solid black;
+
+        /* INTIALIZING THE FELX BOX: DEFINED THIS AFTER DEFINING PROPERTIES FOR ITEMS */
+        display: flex;
+
+        /* FLEX PROPERITES FOR FLEX CONTAINER*/
+        /* By default flex-direction is row */
+
+        /* flex-direction: row; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row-reverse; */
+
+        /* by default flex box will not be responsive we need to make it warp */
+
+        flex-wrap: wrap;
+        /* flex-wrap: wrap-reverse;  for reverse wrap*/
+
+        /* flex-wrap: wrap-reverse wrap;  */
+        /* shortend code  for both wrap and wrap direction */
+
+        /* JUSTIFY CONTENT PROPERTY */
+
+        justify-content: center;
+        /* justify-content: space-between;   */
+        /* justify-content: space-evenly ;    */
+        /* justify-content: space-around;   */
+      }
+
+      .item {
+        width: 200px;
+        height: 200px;
+        background-color: tomato;
+        border: 2px solid green;
+        margin: 10px;
+        padding: 2px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>This is our flex box</h1>
+    <!-- defining class container using div.conatiner -->
+    <div class="container">
+      <!-- Defining class with name item and id item-1 to 5 using div.item#item-$ -->
+      <div class="item" id="item-1">First Box</div>
+      <div class="item" id="item-2">Second Box</div>
+      <div class="item" id="item-3">Third Box</div>
+      <div class="item" id="item-4">Fourth Box</div>
+      <div class="item" id="item-5">Fith Box</div>
+      <div class="item" id="item-6">Six Box</div>
+    </div>
+  </body>
+</html>
+>>>>>>> d5b102a3c0724c03b5e2a62a7ab2f60ff564930c
