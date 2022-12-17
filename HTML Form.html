@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>PhD Scholar information</h2>
+    <form action="Backend.php">
+        <label for="name"> </label>
+        <div>
+            Name: <input type="text" name="Myname" id="name">
+        </div><br>
+
+        <div>
+            Role Number: <input type="text">
+        </div>
+        <br>
+        <div>
+            Email ID: <input type="email">
+        </div>
+        <br>
+
+        <div>
+            Gender: Male <input type="radio" name="Gen"> Female <input type="radio"="Gen">
+        </div>
+        <br>
+        <div>
+
+            <div>
+                DOB: <input type="date">
+            </div>
+            <br>
+            <div>
+            I'm Passed Msc <input type="checkbox">
+        </div>
+        <br>
+        <label for="Select the MSc Branch:">Select the MSc Branch</label> <br>
+        <select name="Mybranch" id="branch">
+            <option value="SLS">School of Life Science </option>
+            <option value="MC">Medical</option>
+        </select>
+        <br>
+        </option>
+        </div>
+        <br>
+
+        <div>
+            Write about Your PhD Proposal: <br>
+            <textarea name="Mytext" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            I'm agree to share this informattion with JSS AHER <input type="checkbox" checked>
+        </div>
+        <br>
+
+
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+
+</html>
