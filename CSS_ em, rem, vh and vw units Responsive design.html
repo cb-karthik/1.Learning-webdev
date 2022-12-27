@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS em, rem, vh and vw units Responsive design</title>
-</head>
-<body>
-    Welcome to karnataka
-    
-</body>
+  </head>
+  <style>
+
+    html{
+        font-size: 25px;
+    }
+   .Container {
+        
+        font-size: 10px;
+        border: 2px solid red;
+
+        /* vh= viewport height, vw= view port width. 50 vh/vw = half screen and 100vh/vw = full Screen */
+        height: 100vh;
+        width: 100vw;
+    }
+    h1{
+        text-align: center;
+       
+
+    }
+    /* #first{
+        
+        /* em multiplies the parent size and puts the value, in above case parent is container its size is 10*3= 30px will be shown */
+        font-size: 3em;
+    } */
+    /* #second{
+        
+        /* rem multiplies the parent size and puts the value, in above case parent is HTML its size is 25*4= 100px will be shown */
+        font-size: 4em;
+    } */
+
+  </style>
+  <body>
+    <div class="Container">
+      <h1 id="first"> This is first Heading</h1>
+      <h1 id="second"> This is second Heading</h1>
+      <h1 id="third"> This isthird Heading</h1>
+    </div>
+  </body>
 </html>
