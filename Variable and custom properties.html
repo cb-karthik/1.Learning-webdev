@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables and custom properties</title>
+    <style>
+
+    /* Declaring Global variable . turn off local variable to execute*/
+    :root{
+        --box-color: pink;
+        --box-color1: red;
+    }
+      .container {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+        /* justify-content with margin auto makes box nd text to center */
+        justify-content: center;
+      }
+      
+      .box {
+        /* Declaring variable name is "box-color" */
+        /* --box-color: green; */
+        width: 200px;
+        height: 200px;
+
+        /* Calling  variable  using name  "box-color" -- should be put */
+        background-color: var(--box-color);
+
+        /* Calling  variable  using name  "box-color" -- should be put */
+        /* variable is local only apply for only {inside} aka Local variables*/
+        box-shadow: 3px 3px var(--box-color1);
+
+        border: 2px solid red;
+        padding: 20px 20px;
+        margin: 20px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">Box1</div>
+      <div class="box" id="box2">Box2</div>
+      <div class="box" id="box3">Box3</div>
+    </div>
+  </body>
+</html>
